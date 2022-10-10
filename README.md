@@ -21,9 +21,9 @@
 
 ### ✨ [Demo]
 
-[Full Portal Demo](gifs/Full%20Portal.GIF)
+[Full Portal Demo](gifs/Full_Portal.GIF)
 
-[Interactive Mouse Demo](gifs/Mouse%20Interactive.GIF)
+[Interactive Mouse Demo](gifs/Mouse_Interactive.GIF)
 
 ## Install
 
