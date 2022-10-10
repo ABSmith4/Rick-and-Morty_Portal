@@ -16,6 +16,9 @@
 
 ### 🏠 [Homepage](https://github.com/ABSmith4/Rick-and-Morty_Portal#readme)
 
+* Particle Rendition of the Rick and Morty Portal
+* Spiral Mouse Interactivity
+
 ### ✨ [Demo]
 
 ![Full Portal Demo](gifs/Full%20Portal.gif)
