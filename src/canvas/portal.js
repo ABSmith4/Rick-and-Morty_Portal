@@ -32,15 +32,21 @@ function lightParticle(x, y, radius, color) {
     this.color = color;
     this.radians = Math.random() * Math.PI * 2;
     this.velocity = 0.05; //speed particle moves
-    this.distanceFromCenter = utils.randomIntFromRange(0, 120);
+    this.distanceFromCenter = utils.randomIntFromRange(50, 120);
+    this.lastMousePosition = {x: x, y: y}
 
     this.update = () => {
       const lastPoint = {x: this.x, y: this.y};
+      
       this.radians += this.velocity;
-      this.x = x + Math.cos(this.radians) * 
+
+      this.lastMousePosition.x += (mouse.x - this.lastMousePosition.x) * 0.05;
+      
+      this.x = this.lastMousePosition.x + Math.cos(this.radians) * 
           this.distanceFromCenter;
-      this.y = y + Math.sin(this.radians) * 
+      this.y = mouse.y + Math.sin(this.radians) * 
           this.distanceFromCenter;
+      
       this.draw(lastPoint);
     };
 
@@ -60,7 +66,7 @@ let particles;
 function init() {
     particles = [];
 
-    for (let i = 0; i < 600; i++) {
+    for (let i = 0; i < 100; i++) {
         const radius = (Math.random() * 2) + 1;
         particles.push(new lightParticle(canvas.width / 2,
             canvas.height / 2, radius, utils.randomColor(utils.colors)));
