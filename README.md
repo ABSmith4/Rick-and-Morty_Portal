@@ -28,19 +28,14 @@
 ## Install
 
 ```sh
-npm install
+Clone Repo and run npm install
 ```
 
 ## Usage
 
 ```sh
-npm run start
-```
-
-## Run tests
-
-```sh
-npm run test
+npm run build 
+(for webpack)
 ```
 
 ## Author
@@ -53,10 +48,6 @@ npm run test
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/ABSmith4/Rick-and-Morty_Portal/issues). You can also take a look at the [contributing guide](https://github.com/ABSmith4/Rick-and-Morty_Portal/blob/master/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
